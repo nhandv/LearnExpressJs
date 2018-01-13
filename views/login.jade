@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    if(message)
+        h4 #{message}
+    form(action = "/login" method = "POST")
+        input(name = "id" type = "text"  placeholder = "User ID")
+        input(name = "password" type = "password"  placeholder = "Password")
+        button(type = "Submit") Log in
